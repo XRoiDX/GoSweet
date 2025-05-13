@@ -126,7 +126,7 @@ async def handle_file(client, message):
 # START COMMAND WITH IMAGE AND BUTTON
 @bot.on_message(filters.command("start"))
 async def start(client, message):
-    image_url = "https://graph.org/file/4e8a1172e8ba4b7a0bdfa.jpg"  # Customize your own image
+    image_url = "https://i.ibb.co/LzLyw4V2/IMG-20250513-182353-652.jpg"  # Customize your own image
     caption = (
         "**Welcome to GoFile Uploader Bot!**\n\n"
         "Just send me any file (video, audio, or document) and I'll upload it to GoFile.\n\n"
@@ -179,7 +179,7 @@ async def help_callback(client, callback_query):
 # BACK TO START CALLBACK HANDLER
 @bot.on_callback_query(filters.regex("^back_to_start$"))
 async def back_to_start(client, callback_query):
-    image_url = "https://graph.org/file/4e8a1172e8ba4b7a0bdfa.jpg"
+    image_url = "https://i.ibb.co/LzLyw4V2/IMG-20250513-182353-652.jpg"
     caption = (
         "**Welcome to GoFile Uploader Bot!**\n\n"
         "Just send me any file (video, audio, or document) and I'll upload it to GoFile.\n\n"

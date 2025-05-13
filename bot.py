@@ -137,7 +137,7 @@ async def start(client, message):
 
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("🔞 Uɴsᴇᴇɴ Cᴏʟʟᴇᴄᴛɪᴏɴ", url="https://t.me/offltbw")],
-        [InlineKeyboardButton("🤖 How to Use", callback_data="help")]
+        [InlineKeyboardButton("🤖 Hᴏᴡ ᴛᴏ Usᴇ", callback_data="help")]
     ])
 
     await message.reply_photo(photo=image_url, caption=caption, reply_markup=keyboard)
@@ -170,7 +170,7 @@ async def help_callback(client, callback_query):
     await callback_query.message.edit(
         text=help_text,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("🔙 Back", callback_data="back_to_start")],
+            [InlineKeyboardButton("🔙 Bᴀᴄᴋ", callback_data="back_to_start")],
             [InlineKeyboardButton("🔞 Uɴsᴇᴇɴ Cᴏʟʟᴇᴄᴛɪᴏɴ", url="https://t.me/offltbw")]
         ]),
         disable_web_page_preview=True
@@ -194,7 +194,7 @@ async def back_to_start(client, callback_query):
         caption=caption,
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("🔞 Uɴsᴇᴇɴ Cᴏʟʟᴇᴄᴛɪᴏɴ", url="https://t.me/offltbw")],
-            [InlineKeyboardButton("🤖 How to Use", callback_data="help")]
+            [InlineKeyboardButton("🤖 Hᴏᴡ ᴛᴏ Usᴇ", callback_data="help")]
         ])
     )
 

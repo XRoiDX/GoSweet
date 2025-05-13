@@ -111,11 +111,11 @@ async def handle_file(client, message):
             f"📂 **File:** `{file_name}`\n"
             f"📦 **Size:** `{human_readable_size(file_size)}`\n\n"
             f"🔗 **Download Link:** [Click Here]({link})\n\n"
-            "🚀 Powered by @Opleech_WD",
+            "🚀 Powered by @usefull_botz",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("📥 Download Now", url=link)],
-                [InlineKeyboardButton("📢 Updates Channel", url="https://t.me/Opleech_WD")]
+                [InlineKeyboardButton("📥 Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ", url=link)],
+                [InlineKeyboardButton("Uɴsᴇᴇɴ Cᴏʟʟᴇᴄᴛɪᴏɴ🔞", url="https://t.me/offltbw")]
             ])
         )
     except Exception as e:
@@ -132,11 +132,11 @@ async def start(client, message):
         "Just send me any file (video, audio, or document) and I'll upload it to GoFile.\n\n"
         "⚡ Max file size: 4GB\n"
         "✅ Fast & Free\n\n"
-        "__Powered by @Opleech_WD__"
+        "__Powered by @usefull_botz___"
     )
 
     keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("📢 Updates Channel", url="https://t.me/Opleech_WD")],
+        [InlineKeyboardButton("🔞 Uɴsᴇᴇɴ Cᴏʟʟᴇᴄᴛɪᴏɴ", url="https://t.me/offltbw")],
         [InlineKeyboardButton("🤖 How to Use", callback_data="help")]
     ])
 
@@ -163,15 +163,15 @@ async def help_callback(client, callback_query):
         "   - Large files may take longer to upload\n"
         "   - Keep stable internet connection during upload\n"
         "   - Files are automatically deleted after 10 days of inactivity (GoFile policy)\n\n"
-        "For support contact: @Opleech_WD\n\n"
-        "🚀 **Powered by @Opleech_WD**"
+        "For Uɴsᴇᴇɴ Cᴏʟʟᴇᴄᴛɪᴏɴ : @offltbw\n\n"
+        "🚀 **Powered by @usefull_botz**"
     )
 
     await callback_query.message.edit(
         text=help_text,
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("🔙 Back", callback_data="back_to_start")],
-            [InlineKeyboardButton("📢 Updates Channel", url="https://t.me/Opleech_WD")]
+            [InlineKeyboardButton("🔞 Uɴsᴇᴇɴ Cᴏʟʟᴇᴄᴛɪᴏɴ", url="https://t.me/offltbw")]
         ]),
         disable_web_page_preview=True
     )
@@ -185,7 +185,7 @@ async def back_to_start(client, callback_query):
         "Just send me any file (video, audio, or document) and I'll upload it to GoFile.\n\n"
         "⚡ Max file size: 4GB\n"
         "✅ Fast & Free\n\n"
-        "__Powered by @Opleech_WD__"
+        "__Powered by @usefull_botz__"
     )
     
     await callback_query.message.delete()
@@ -193,7 +193,7 @@ async def back_to_start(client, callback_query):
         photo=image_url,
         caption=caption,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("📢 Updates Channel", url="https://t.me/Opleech_WD")],
+            [InlineKeyboardButton("🔞 Uɴsᴇᴇɴ Cᴏʟʟᴇᴄᴛɪᴏɴ", url="https://t.me/offltbw")],
             [InlineKeyboardButton("🤖 How to Use", callback_data="help")]
         ])
     )

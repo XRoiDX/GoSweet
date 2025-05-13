@@ -204,7 +204,7 @@ def run():
     @app.route('/')
     def home():
         return 'Bot is alive!'
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
 
 Thread(target=run).start()
 bot.run()
